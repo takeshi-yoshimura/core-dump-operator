@@ -40,5 +40,7 @@ jobs:
       - name: Tidy
         run: |
           go mod tidy
+      - name: Make generate
+        run: make generate
       - name: Test Uploader
         run: make uploader-test

@@ -37,5 +37,8 @@ jobs:
       - uses: actions/setup-go@v2
         with:
           go-version: '1.19.2'
+      - name: Tidy
+        run: |
+          go mod tidy
       - name: Test Uploader
         run: make uploader-test

@@ -283,3 +283,4 @@ uploader-test: fmt vet envtest ## Run tests.
 	KUBEBUILDER_ASSETS="$(shell $(ENVTEST) use $(ENVTEST_K8S_VERSION) --bin-dir $(LOCALBIN) -p path)" go test ./cmd/... -coverprofile uploader-cover.out
 	go tool cover -html=uploader-cover.out -o uploader-cover.html
 
+# test

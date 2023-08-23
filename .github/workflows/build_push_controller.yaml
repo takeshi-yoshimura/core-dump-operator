@@ -101,8 +101,8 @@ jobs:
   build-push-uploader:
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: ${{ env.IMAGE_REGISTRY }}/core-dump-uploader
-      CGO_ENABLED: 0 
+      IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/core-dump-uploader
+      CGO_ENABLED: 0
       GOOS: linux
     steps:
       - uses: actions/checkout@v2
